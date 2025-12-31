@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logout-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #5313ac, #7d5cd6, #a68bf0);
+}
+
+
+.logout-box {
+    width: 320px;
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+.user-icon {
+    font-size: 60px;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+
+.logout-box p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.fst {
+    background: #800080;
+    color: white;
+}
+
+.snd {
+    background: #800080;
+    color: white;
+}

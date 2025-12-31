@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,#800080, #271CF3) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box input {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0 18px;
+    background-color: rgba(255, 255, 255, 0.15); /* input background */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.container {
+    width: 572px;
+    padding: 25px;
+    background:#4b43eb;
+    border-radius: 10px;
+   background: rgba(255, 255, 255, 0.08); /* glass layer */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.login-box {
+    text-align: center;
+    color: white;
+   
+}
+
+.login-box h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-box h3 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.or {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+form {
+    text-align: left;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 14px;
+    margin: 8px 0;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    height: 42px;
+    padding: 0 1px;
+
+    background-color: transparent !important; /* FORCE REMOVE WHITE */
+    background: transparent !important;
+
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+
+    color: #fff;
+    font-size: 14px;
+
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Chrome autofill fix (IMPORTANT) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* placeholder */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* placeholder color */
+
+
+/* focus effect */
+input:focus {
+    border-color: #ffffff;
+}
+
+/* focus effect */
+
+
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.options .forget {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signup {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.signup a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+

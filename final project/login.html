@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Aurovia</h1>
+            <h3>Login your account</h3>
+            <p class="or">Or Login With Email</p>
+
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#" class="forget">Forget Password</a>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <p class="signup">Don’t have an account? <a href="#">Sign Up !</a></p>
+        </div>
+    </div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+
+    
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    
+    let passwordRegex = /^.{6,}$/;
+
+    if (!emailRegex.test(email)) {
+        alert("Invalid Email Format!");
+        return;
+    }
+
+    if (!passwordRegex.test(password)) {
+        alert("Password must be at least 6 characters!");
+        return;
+    }
+
+    
+    alert("Login Successful!");
+    window.location.href = "index.html";  
+});
+</script>
+
+</body>
+</html>
